@@ -13,6 +13,7 @@ class ProdutoController extends Controller
 
     public function show($id)
     {
-        return view('pages.produtos.show', ['id' => $id]);
+ 
+        return view('pages.produtos.show', compact('id'));
     }
 }
